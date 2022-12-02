@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PicTitle">
+            <connections>
+                <outlet property="imgView" destination="4zB-OG-VBN" id="KH1-jt-YSe"/>
+                <outlet property="label1" destination="GEm-6R-0dx" id="MLj-tl-Ear"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VZFStackView">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4zB-OG-VBN">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="4zB-OG-VBN" secondAttribute="height" id="rUG-je-guw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3p-ie-PIT">
+                    <rect key="frame" x="0.0" y="100" width="100" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4zB-OG-VBN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3LY-R1-x05"/>
+                <constraint firstItem="4zB-OG-VBN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8Mf-Ft-PaK"/>
+                <constraint firstItem="j3p-ie-PIT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="CbJ-ba-uqe"/>
+                <constraint firstItem="j3p-ie-PIT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="MOZ-Aa-Hhq"/>
+                <constraint firstItem="j3p-ie-PIT" firstAttribute="top" secondItem="4zB-OG-VBN" secondAttribute="bottom" id="QKQ-n0-Jf9"/>
+                <constraint firstItem="4zB-OG-VBN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QN7-OA-42c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j3p-ie-PIT" secondAttribute="bottom" id="lVZ-DT-axI"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="104.7554347826087"/>
+        </view>
+        <view contentMode="scaleToFill" id="QHS-jc-B39" customClass="VZFStackView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUq-ZT-H5T">
+                    <rect key="frame" x="149.66666666666666" y="0.0" width="1" height="200"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="CnI-af-bbO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivw-aq-JNV">
+                    <rect key="frame" x="0.0" y="99.666666666666671" width="300" height="1"/>
+                    <color key="backgroundColor" red="0.62352941179999999" green="0.52941176469999995" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="115-EM-t2Z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEm-6R-0dx">
+                    <rect key="frame" x="10" y="10" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USe-fe-QuH">
+                    <rect key="frame" x="120" y="83" width="60" height="34"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.43921568630000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="ZvW-Gs-5Mz"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="点我"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="8qs-q9-Y6F"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="TUq-ZT-H5T" firstAttribute="centerX" secondItem="8qs-q9-Y6F" secondAttribute="centerX" id="2nc-Gi-Jgf"/>
+                <constraint firstItem="Ivw-aq-JNV" firstAttribute="width" secondItem="QHS-jc-B39" secondAttribute="width" id="3J2-Fz-z5x"/>
+                <constraint firstItem="Ivw-aq-JNV" firstAttribute="centerY" secondItem="8qs-q9-Y6F" secondAttribute="centerY" id="BJu-0T-2ek"/>
+                <constraint firstItem="TUq-ZT-H5T" firstAttribute="height" secondItem="QHS-jc-B39" secondAttribute="height" id="Ikt-45-9NL"/>
+                <constraint firstItem="TUq-ZT-H5T" firstAttribute="centerY" secondItem="8qs-q9-Y6F" secondAttribute="centerY" id="JHk-WD-14u"/>
+                <constraint firstItem="GEm-6R-0dx" firstAttribute="leading" secondItem="8qs-q9-Y6F" secondAttribute="leading" constant="10" id="Sye-hD-IPe"/>
+                <constraint firstItem="Ivw-aq-JNV" firstAttribute="centerX" secondItem="8qs-q9-Y6F" secondAttribute="centerX" id="Y1J-pG-XfG"/>
+                <constraint firstItem="USe-fe-QuH" firstAttribute="centerY" secondItem="8qs-q9-Y6F" secondAttribute="centerY" id="odk-Lz-GFz"/>
+                <constraint firstItem="USe-fe-QuH" firstAttribute="centerX" secondItem="8qs-q9-Y6F" secondAttribute="centerX" id="tbi-bk-bR4"/>
+                <constraint firstItem="GEm-6R-0dx" firstAttribute="top" secondItem="8qs-q9-Y6F" secondAttribute="top" constant="10" id="waU-Wd-Tat"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="17" y="510"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

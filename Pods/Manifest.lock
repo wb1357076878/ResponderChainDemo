@@ -1,0 +1,26 @@
+PODS:
+  - FDStackView (1.0.1)
+  - OAStackView (1.0.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - FDStackView (~> 1.0.1)
+  - OAStackView (~> 1.0.1)
+  - YYKit (~> 1.0.9)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - FDStackView
+    - OAStackView
+    - YYKit
+
+SPEC CHECKSUMS:
+  FDStackView: fc0697e5be2022c8af36ce66e9e2061006058ba8
+  OAStackView: 95e7cb79cbea25c2342f496a44bdbe8bd4c8d510
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 4efa4ebd63a1df3460c7c87ac731bf5d43a72fc6
+
+COCOAPODS: 1.11.3
