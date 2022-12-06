@@ -20,6 +20,13 @@
 		2D002E95292E1358006B50B1 /* VZFStackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D002E94292E1358006B50B1 /* VZFStackView.m */; };
 		2D002E97292E13A2006B50B1 /* PictitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D002E96292E13A2006B50B1 /* PictitleView.xib */; };
 		2D002E9A292E206C006B50B1 /* PicTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D002E99292E206C006B50B1 /* PicTitle.m */; };
+		2D1B0D4A293DBE2C0036F6D9 /* UIImage+ImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D49293DBE2C0036F6D9 /* UIImage+ImageComponent.m */; };
+		2D1B0D4D293DBEA10036F6D9 /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D4C293DBEA10036F6D9 /* ImageFilter.m */; };
+		2D1B0D56293EDB0D0036F6D9 /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D55293EDB0D0036F6D9 /* ImageTransformFilter.m */; };
+		2D1B0D59293EE1980036F6D9 /* DecoratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D58293EE1980036F6D9 /* DecoratorViewController.m */; };
+		2D1B0D5C293EE1E30036F6D9 /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D5B293EE1E30036F6D9 /* ImageShadowFilter.m */; };
+		2D1B0D61293EE3040036F6D9 /* DecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D60293EE3040036F6D9 /* DecoratorView.m */; };
+		2D1B0D65293F02460036F6D9 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D64293F02460036F6D9 /* TestObject.m */; };
 		2DB467B729399146008E82AC /* UIResponder+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB467B629399146008E82AC /* UIResponder+Event.m */; };
 		2DB467BA2939932A008E82AC /* UIEventProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB467B92939932A008E82AC /* UIEventProxy.m */; };
 		459B42545DDB5E54E59969E3 /* Pods_HomeTestOC_HomeTestOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3147F34931C5B4F6AE82A306 /* Pods_HomeTestOC_HomeTestOCUITests.framework */; };
@@ -67,6 +74,21 @@
 		2D002E96292E13A2006B50B1 /* PictitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictitleView.xib; sourceTree = "<group>"; };
 		2D002E98292E206B006B50B1 /* PicTitle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PicTitle.h; sourceTree = "<group>"; };
 		2D002E99292E206C006B50B1 /* PicTitle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicTitle.m; sourceTree = "<group>"; };
+		2D1B0D47293D96940036F6D9 /* ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageComponent.h; sourceTree = "<group>"; };
+		2D1B0D48293DBE2C0036F6D9 /* UIImage+ImageComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageComponent.h"; sourceTree = "<group>"; };
+		2D1B0D49293DBE2C0036F6D9 /* UIImage+ImageComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageComponent.m"; sourceTree = "<group>"; };
+		2D1B0D4B293DBEA10036F6D9 /* ImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
+		2D1B0D4C293DBEA10036F6D9 /* ImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFilter.m; sourceTree = "<group>"; };
+		2D1B0D54293EDB0D0036F6D9 /* ImageTransformFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageTransformFilter.h; sourceTree = "<group>"; };
+		2D1B0D55293EDB0D0036F6D9 /* ImageTransformFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageTransformFilter.m; sourceTree = "<group>"; };
+		2D1B0D57293EE1980036F6D9 /* DecoratorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorViewController.h; sourceTree = "<group>"; };
+		2D1B0D58293EE1980036F6D9 /* DecoratorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorViewController.m; sourceTree = "<group>"; };
+		2D1B0D5A293EE1E30036F6D9 /* ImageShadowFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
+		2D1B0D5B293EE1E30036F6D9 /* ImageShadowFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
+		2D1B0D5F293EE3040036F6D9 /* DecoratorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DecoratorView.h; sourceTree = "<group>"; };
+		2D1B0D60293EE3040036F6D9 /* DecoratorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorView.m; sourceTree = "<group>"; };
+		2D1B0D63293F02460036F6D9 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		2D1B0D64293F02460036F6D9 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 		2DB467B529399146008E82AC /* UIResponder+Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Event.h"; sourceTree = "<group>"; };
 		2DB467B629399146008E82AC /* UIResponder+Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Event.m"; sourceTree = "<group>"; };
 		2DB467B82939932A008E82AC /* UIEventProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEventProxy.h; sourceTree = "<group>"; };
@@ -139,6 +161,7 @@
 				2D002E5F292E130B006B50B1 /* AppDelegate.m */,
 				2D002E61292E130B006B50B1 /* SceneDelegate.h */,
 				2D002E62292E130B006B50B1 /* SceneDelegate.m */,
+				2D1B0D5D293EE2C20036F6D9 /* Decorator */,
 				2D002E93292E1358006B50B1 /* VZFStackView.h */,
 				2D002E94292E1358006B50B1 /* VZFStackView.m */,
 				2DB467B529399146008E82AC /* UIResponder+Event.h */,
@@ -174,6 +197,52 @@
 				2D002E86292E130E006B50B1 /* HomeTestOCUITestsLaunchTests.m */,
 			);
 			path = HomeTestOCUITests;
+			sourceTree = "<group>";
+		};
+		2D1B0D46293D96330036F6D9 /* UIImageComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2D1B0D47293D96940036F6D9 /* ImageComponent.h */,
+				2D1B0D48293DBE2C0036F6D9 /* UIImage+ImageComponent.h */,
+				2D1B0D49293DBE2C0036F6D9 /* UIImage+ImageComponent.m */,
+				2D1B0D4B293DBEA10036F6D9 /* ImageFilter.h */,
+				2D1B0D4C293DBEA10036F6D9 /* ImageFilter.m */,
+				2D1B0D54293EDB0D0036F6D9 /* ImageTransformFilter.h */,
+				2D1B0D55293EDB0D0036F6D9 /* ImageTransformFilter.m */,
+				2D1B0D5A293EE1E30036F6D9 /* ImageShadowFilter.h */,
+				2D1B0D5B293EE1E30036F6D9 /* ImageShadowFilter.m */,
+			);
+			path = UIImageComponent;
+			sourceTree = "<group>";
+		};
+		2D1B0D5D293EE2C20036F6D9 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				2D1B0D46293D96330036F6D9 /* UIImageComponent */,
+				2D1B0D5E293EE2E00036F6D9 /* ViewController */,
+				2D1B0D62293EE3090036F6D9 /* View */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		2D1B0D5E293EE2E00036F6D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D1B0D57293EE1980036F6D9 /* DecoratorViewController.h */,
+				2D1B0D58293EE1980036F6D9 /* DecoratorViewController.m */,
+				2D1B0D63293F02460036F6D9 /* TestObject.h */,
+				2D1B0D64293F02460036F6D9 /* TestObject.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2D1B0D62293EE3090036F6D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D1B0D5F293EE3040036F6D9 /* DecoratorView.h */,
+				2D1B0D60293EE3040036F6D9 /* DecoratorView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		36F058FE3B35D7D25739188F /* Frameworks */ = {
@@ -440,10 +509,17 @@
 			files = (
 				2DB467B729399146008E82AC /* UIResponder+Event.m in Sources */,
 				2D002E66292E130B006B50B1 /* ViewController.m in Sources */,
+				2D1B0D59293EE1980036F6D9 /* DecoratorViewController.m in Sources */,
 				2D002E60292E130B006B50B1 /* AppDelegate.m in Sources */,
+				2D1B0D61293EE3040036F6D9 /* DecoratorView.m in Sources */,
+				2D1B0D5C293EE1E30036F6D9 /* ImageShadowFilter.m in Sources */,
+				2D1B0D56293EDB0D0036F6D9 /* ImageTransformFilter.m in Sources */,
+				2D1B0D65293F02460036F6D9 /* TestObject.m in Sources */,
+				2D1B0D4A293DBE2C0036F6D9 /* UIImage+ImageComponent.m in Sources */,
 				2DB467BA2939932A008E82AC /* UIEventProxy.m in Sources */,
 				2D002E95292E1358006B50B1 /* VZFStackView.m in Sources */,
 				2D002E71292E130E006B50B1 /* main.m in Sources */,
+				2D1B0D4D293DBEA10036F6D9 /* ImageFilter.m in Sources */,
 				2D002E63292E130B006B50B1 /* SceneDelegate.m in Sources */,
 				2D002E9A292E206C006B50B1 /* PicTitle.m in Sources */,
 			);

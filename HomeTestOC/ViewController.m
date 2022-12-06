@@ -10,6 +10,7 @@
 #import "PicTitle.h"
 #import "UIResponder+Event.h"
 #import "UIEventProxy.h"
+#import "UIImage+ImageComponent.h"
 
 @interface ViewController ()
 
@@ -37,6 +38,15 @@
     
     [model setModel1];
     [self.view addSubview:view2];
+    
+    UIImageView *baseIV = [[UIImageView alloc] initWithFrame:CGRectMake(20, 60, 236, 341)];
+    baseIV.image = [UIImage imageNamed:@"guimie"];
+    [self.view addSubview:baseIV];
+    
+    UIImage *subImage = [[UIImage imageNamed:@"guimie"] imageAtRect:CGRectMake(100, 100, 120, 150)];
+    UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectMake(120, 160, 120, 150)];
+    iv.image = subImage;
+    [self.view addSubview:iv];
     
 }
 
