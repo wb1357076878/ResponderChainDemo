@@ -7,12 +7,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class VZFStackView;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PicTitle : NSObject
+@interface PicTitle : UIResponder
 
+- (VZFStackView *)getSVWithFrame:(CGRect)frame;
 - (void)setModel;
 - (void)setModel1;
+- (void)didClickShoppingCart:(NSDictionary *)userInfo;
 
 @end
 

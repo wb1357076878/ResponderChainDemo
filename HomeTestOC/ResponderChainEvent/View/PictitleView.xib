@@ -11,44 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PicTitle">
             <connections>
-                <outlet property="imgView" destination="4zB-OG-VBN" id="KH1-jt-YSe"/>
                 <outlet property="label1" destination="GEm-6R-0dx" id="MLj-tl-Ear"/>
+                <outlet property="stackView2" destination="QHS-jc-B39" id="mDF-WJ-t4G"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VZFStackView">
-            <rect key="frame" x="0.0" y="0.0" width="100" height="120"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4zB-OG-VBN">
-                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="4zB-OG-VBN" secondAttribute="height" id="rUG-je-guw"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j3p-ie-PIT">
-                    <rect key="frame" x="0.0" y="100" width="100" height="20"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="4zB-OG-VBN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3LY-R1-x05"/>
-                <constraint firstItem="4zB-OG-VBN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="8Mf-Ft-PaK"/>
-                <constraint firstItem="j3p-ie-PIT" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="CbJ-ba-uqe"/>
-                <constraint firstItem="j3p-ie-PIT" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="MOZ-Aa-Hhq"/>
-                <constraint firstItem="j3p-ie-PIT" firstAttribute="top" secondItem="4zB-OG-VBN" secondAttribute="bottom" id="QKQ-n0-Jf9"/>
-                <constraint firstItem="4zB-OG-VBN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QN7-OA-42c"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j3p-ie-PIT" secondAttribute="bottom" id="lVZ-DT-axI"/>
-            </constraints>
-            <nil key="simulatedTopBarMetrics"/>
-            <nil key="simulatedBottomBarMetrics"/>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="131.8840579710145" y="104.7554347826087"/>
-        </view>
         <view contentMode="scaleToFill" id="QHS-jc-B39" customClass="VZFStackView">
             <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,11 +40,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEm-6R-0dx">
-                    <rect key="frame" x="10" y="10" width="42" height="21"/>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加购" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEm-6R-0dx">
+                    <rect key="frame" x="10" y="10" width="34.666666666666664" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="AGO-vf-7da" appends="YES" id="tpm-JQ-99Z"/>
+                    </connections>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USe-fe-QuH">
                     <rect key="frame" x="120" y="83" width="60" height="34"/>
@@ -91,6 +61,7 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="8qs-q9-Y6F"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="TUq-ZT-H5T" firstAttribute="centerX" secondItem="8qs-q9-Y6F" secondAttribute="centerX" id="2nc-Gi-Jgf"/>
                 <constraint firstItem="Ivw-aq-JNV" firstAttribute="width" secondItem="QHS-jc-B39" secondAttribute="width" id="3J2-Fz-z5x"/>
@@ -111,8 +82,23 @@
                     <integer key="value" value="20"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="TeA-Aq-xVY" appends="YES" id="sBn-BB-Xwu"/>
+            </connections>
             <point key="canvasLocation" x="17" y="510"/>
         </view>
+        <tapGestureRecognizer id="TeA-Aq-xVY">
+            <connections>
+                <action selector="shopping:" destination="-1" id="uKo-h4-AgR"/>
+                <outlet property="delegate" destination="-1" id="NhS-h0-YOw"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="AGO-vf-7da">
+            <connections>
+                <action selector="goodsInfo:" destination="-1" id="uPh-Zu-NAN"/>
+                <outlet property="delegate" destination="-1" id="aVG-z0-OIE"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">

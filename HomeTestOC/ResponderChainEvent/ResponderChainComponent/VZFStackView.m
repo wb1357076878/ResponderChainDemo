@@ -7,16 +7,32 @@
 
 #import "VZFStackView.h"
 #import "UIResponder+Event.h"
+#import "UIEventProxy.h"
 
 NSString * const FNGoodsDetailEvent = @"goodsDetail";
 NSString * const FNAddToShoppingCartEvent = @"shoppingCart";
 
+@interface VZFStackView ()
+
+@property(nonatomic, strong) UIEventProxy *eventProxy;
+
+@end
+
 @implementation VZFStackView
 
 
+// 事件处理
 - (void)responseEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo {
-    
+    [self.eventProxy handleEvent:eventName userInfo:userInfo];
 }
+
+- (UIEventProxy *)eventProxy {
+    if (!_eventProxy) {
+        _eventProxy = [[UIEventProxy alloc] init];
+    }
+    return _eventProxy;
+}
+
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     UIView *touchView = self;
@@ -37,26 +53,6 @@ NSString * const FNAddToShoppingCartEvent = @"shoppingCart";
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     return [super pointInside:point withEvent:event];
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-}
-
-- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-}
-
-- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-}
-
-- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
-}
-
-- (void)willMoveToWindow:(UIWindow *)newWindow {
-    
 }
 
 

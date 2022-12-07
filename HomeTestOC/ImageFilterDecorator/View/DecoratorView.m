@@ -13,4 +13,8 @@
     [_image drawInRect:rect];
 }
 
+- (id<CAAction>)actionForLayer:(CALayer *)layer forKey:(NSString *)event {
+    return [super actionForLayer:layer forKey:event];
+}
+
 @end

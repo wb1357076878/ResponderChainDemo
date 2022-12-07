@@ -27,6 +27,8 @@
 		2D1B0D5C293EE1E30036F6D9 /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D5B293EE1E30036F6D9 /* ImageShadowFilter.m */; };
 		2D1B0D61293EE3040036F6D9 /* DecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D60293EE3040036F6D9 /* DecoratorView.m */; };
 		2D1B0D65293F02460036F6D9 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D64293F02460036F6D9 /* TestObject.m */; };
+		2D1B0D6D294040BC0036F6D9 /* CACusLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D6C294040BC0036F6D9 /* CACusLayer.m */; };
+		2D1B0D702940705C0036F6D9 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B0D6F2940705C0036F6D9 /* MessageViewController.m */; };
 		2DB467B729399146008E82AC /* UIResponder+Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB467B629399146008E82AC /* UIResponder+Event.m */; };
 		2DB467BA2939932A008E82AC /* UIEventProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB467B92939932A008E82AC /* UIEventProxy.m */; };
 		459B42545DDB5E54E59969E3 /* Pods_HomeTestOC_HomeTestOCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3147F34931C5B4F6AE82A306 /* Pods_HomeTestOC_HomeTestOCUITests.framework */; };
@@ -89,6 +91,10 @@
 		2D1B0D60293EE3040036F6D9 /* DecoratorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratorView.m; sourceTree = "<group>"; };
 		2D1B0D63293F02460036F6D9 /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
 		2D1B0D64293F02460036F6D9 /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		2D1B0D6B294040BC0036F6D9 /* CACusLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACusLayer.h; sourceTree = "<group>"; };
+		2D1B0D6C294040BC0036F6D9 /* CACusLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CACusLayer.m; sourceTree = "<group>"; };
+		2D1B0D6E2940705C0036F6D9 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		2D1B0D6F2940705C0036F6D9 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		2DB467B529399146008E82AC /* UIResponder+Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Event.h"; sourceTree = "<group>"; };
 		2DB467B629399146008E82AC /* UIResponder+Event.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Event.m"; sourceTree = "<group>"; };
 		2DB467B82939932A008E82AC /* UIEventProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIEventProxy.h; sourceTree = "<group>"; };
@@ -157,27 +163,11 @@
 		2D002E5D292E130B006B50B1 /* HomeTestOC */ = {
 			isa = PBXGroup;
 			children = (
-				2D002E5E292E130B006B50B1 /* AppDelegate.h */,
-				2D002E5F292E130B006B50B1 /* AppDelegate.m */,
-				2D002E61292E130B006B50B1 /* SceneDelegate.h */,
-				2D002E62292E130B006B50B1 /* SceneDelegate.m */,
-				2D1B0D5D293EE2C20036F6D9 /* Decorator */,
-				2D002E93292E1358006B50B1 /* VZFStackView.h */,
-				2D002E94292E1358006B50B1 /* VZFStackView.m */,
-				2DB467B529399146008E82AC /* UIResponder+Event.h */,
-				2DB467B629399146008E82AC /* UIResponder+Event.m */,
-				2DB467B82939932A008E82AC /* UIEventProxy.h */,
-				2DB467B92939932A008E82AC /* UIEventProxy.m */,
-				2D002E98292E206B006B50B1 /* PicTitle.h */,
-				2D002E99292E206C006B50B1 /* PicTitle.m */,
-				2D002E96292E13A2006B50B1 /* PictitleView.xib */,
-				2D002E64292E130B006B50B1 /* ViewController.h */,
-				2D002E65292E130B006B50B1 /* ViewController.m */,
-				2D002E67292E130B006B50B1 /* Main.storyboard */,
-				2D002E6A292E130E006B50B1 /* Assets.xcassets */,
-				2D002E6C292E130E006B50B1 /* LaunchScreen.storyboard */,
-				2D002E6F292E130E006B50B1 /* Info.plist */,
-				2D002E70292E130E006B50B1 /* main.m */,
+				2D1B0D76294081790036F6D9 /* Application */,
+				2D1B0D71294070670036F6D9 /* MessageForwarding */,
+				2D1B0D5D293EE2C20036F6D9 /* ImageFilterDecorator */,
+				2D1B0D72294080790036F6D9 /* ResponderChainEvent */,
+				2D1B0D772940819B0036F6D9 /* Resources */,
 			);
 			path = HomeTestOC;
 			sourceTree = "<group>";
@@ -215,14 +205,14 @@
 			path = UIImageComponent;
 			sourceTree = "<group>";
 		};
-		2D1B0D5D293EE2C20036F6D9 /* Decorator */ = {
+		2D1B0D5D293EE2C20036F6D9 /* ImageFilterDecorator */ = {
 			isa = PBXGroup;
 			children = (
 				2D1B0D46293D96330036F6D9 /* UIImageComponent */,
 				2D1B0D5E293EE2E00036F6D9 /* ViewController */,
 				2D1B0D62293EE3090036F6D9 /* View */,
 			);
-			path = Decorator;
+			path = ImageFilterDecorator;
 			sourceTree = "<group>";
 		};
 		2D1B0D5E293EE2E00036F6D9 /* ViewController */ = {
@@ -230,8 +220,6 @@
 			children = (
 				2D1B0D57293EE1980036F6D9 /* DecoratorViewController.h */,
 				2D1B0D58293EE1980036F6D9 /* DecoratorViewController.m */,
-				2D1B0D63293F02460036F6D9 /* TestObject.h */,
-				2D1B0D64293F02460036F6D9 /* TestObject.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -241,8 +229,86 @@
 			children = (
 				2D1B0D5F293EE3040036F6D9 /* DecoratorView.h */,
 				2D1B0D60293EE3040036F6D9 /* DecoratorView.m */,
+				2D1B0D6B294040BC0036F6D9 /* CACusLayer.h */,
+				2D1B0D6C294040BC0036F6D9 /* CACusLayer.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2D1B0D71294070670036F6D9 /* MessageForwarding */ = {
+			isa = PBXGroup;
+			children = (
+				2D1B0D63293F02460036F6D9 /* TestObject.h */,
+				2D1B0D64293F02460036F6D9 /* TestObject.m */,
+				2D1B0D6E2940705C0036F6D9 /* MessageViewController.h */,
+				2D1B0D6F2940705C0036F6D9 /* MessageViewController.m */,
+			);
+			path = MessageForwarding;
+			sourceTree = "<group>";
+		};
+		2D1B0D72294080790036F6D9 /* ResponderChainEvent */ = {
+			isa = PBXGroup;
+			children = (
+				2D1B0D73294081040036F6D9 /* ResponderChainComponent */,
+				2D1B0D74294081310036F6D9 /* View */,
+				2D1B0D752940813D0036F6D9 /* ViewController */,
+			);
+			path = ResponderChainEvent;
+			sourceTree = "<group>";
+		};
+		2D1B0D73294081040036F6D9 /* ResponderChainComponent */ = {
+			isa = PBXGroup;
+			children = (
+				2D002E93292E1358006B50B1 /* VZFStackView.h */,
+				2D002E94292E1358006B50B1 /* VZFStackView.m */,
+				2DB467B529399146008E82AC /* UIResponder+Event.h */,
+				2DB467B629399146008E82AC /* UIResponder+Event.m */,
+				2DB467B82939932A008E82AC /* UIEventProxy.h */,
+				2DB467B92939932A008E82AC /* UIEventProxy.m */,
+			);
+			path = ResponderChainComponent;
+			sourceTree = "<group>";
+		};
+		2D1B0D74294081310036F6D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D002E98292E206B006B50B1 /* PicTitle.h */,
+				2D002E99292E206C006B50B1 /* PicTitle.m */,
+				2D002E96292E13A2006B50B1 /* PictitleView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D1B0D752940813D0036F6D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D002E64292E130B006B50B1 /* ViewController.h */,
+				2D002E65292E130B006B50B1 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2D1B0D76294081790036F6D9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2D002E5E292E130B006B50B1 /* AppDelegate.h */,
+				2D002E5F292E130B006B50B1 /* AppDelegate.m */,
+				2D002E61292E130B006B50B1 /* SceneDelegate.h */,
+				2D002E62292E130B006B50B1 /* SceneDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2D1B0D772940819B0036F6D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D002E67292E130B006B50B1 /* Main.storyboard */,
+				2D002E6A292E130E006B50B1 /* Assets.xcassets */,
+				2D002E6C292E130E006B50B1 /* LaunchScreen.storyboard */,
+				2D002E6F292E130E006B50B1 /* Info.plist */,
+				2D002E70292E130E006B50B1 /* main.m */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		36F058FE3B35D7D25739188F /* Frameworks */ = {
@@ -510,6 +576,7 @@
 				2DB467B729399146008E82AC /* UIResponder+Event.m in Sources */,
 				2D002E66292E130B006B50B1 /* ViewController.m in Sources */,
 				2D1B0D59293EE1980036F6D9 /* DecoratorViewController.m in Sources */,
+				2D1B0D6D294040BC0036F6D9 /* CACusLayer.m in Sources */,
 				2D002E60292E130B006B50B1 /* AppDelegate.m in Sources */,
 				2D1B0D61293EE3040036F6D9 /* DecoratorView.m in Sources */,
 				2D1B0D5C293EE1E30036F6D9 /* ImageShadowFilter.m in Sources */,
@@ -520,6 +587,7 @@
 				2D002E95292E1358006B50B1 /* VZFStackView.m in Sources */,
 				2D002E71292E130E006B50B1 /* main.m in Sources */,
 				2D1B0D4D293DBEA10036F6D9 /* ImageFilter.m in Sources */,
+				2D1B0D702940705C0036F6D9 /* MessageViewController.m in Sources */,
 				2D002E63292E130B006B50B1 /* SceneDelegate.m in Sources */,
 				2D002E9A292E206C006B50B1 /* PicTitle.m in Sources */,
 			);
@@ -699,7 +767,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4M5PQ9ADU9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeTestOC/Info.plist;
+				INFOPLIST_FILE = HomeTestOC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -728,7 +796,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4M5PQ9ADU9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HomeTestOC/Info.plist;
+				INFOPLIST_FILE = HomeTestOC/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

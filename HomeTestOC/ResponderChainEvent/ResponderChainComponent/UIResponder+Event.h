@@ -11,6 +11,8 @@
 @interface UIResponder (Event)
 
 - (void)responseEventWithName:(NSString *)eventName userInfo:(NSDictionary *)userInfo;
+- (NSInvocation *)createInvocationWithSelector:(SEL)selector;
+
 
 @end
 
